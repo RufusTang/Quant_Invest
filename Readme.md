@@ -20,3 +20,12 @@
 -  进行线性回归，针对线性回归确定beta和alpha，针对残差进行分析
 -  残差是否符合正态分布，是否需要采用log处理
 -  验证了是否cointegration，是否stationary
+
+
+
+# 4. Kalman Example
+功能：
+-  依据ETF的价格，使用Kalman 方程来进行模拟
+-  Kalman方程最核心的是transition matrix、observation matrix
+-  如果observation matrix会发生变化，则只能使用update函数循环进行kalman匹配
+-  对比rollingOls，最后按照return rate计算出来的beta、alpha结果相差不大
