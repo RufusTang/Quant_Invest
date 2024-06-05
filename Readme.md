@@ -29,3 +29,11 @@
 -  Kalman方程最核心的是transition matrix、observation matrix
 -  如果observation matrix会发生变化，则只能使用update函数循环进行kalman匹配
 -  对比rollingOls，最后按照return rate计算出来的beta、alpha结果相差不大
+
+
+# 5.  HMM Example
+功能：
+-  使用收益率、成交量、波动率构建观察变量
+-  通过观察到的变量推测市场处于的状态
+-  通过状态转移矩阵与当前状态推测下一阶段的状态
+-  不同的状态有不同的均值，在不同的状态下可以设置不同的组合暴露
